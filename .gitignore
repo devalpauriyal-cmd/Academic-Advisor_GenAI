@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+# backend/index/ and backend/models/ are committed on purpose: the deployed backend needs the vector index
+# and the embedding model (rebuild the index with: cd backend && python extract_data.py && python ingest.py)
+
+# Node (any folder, e.g. frontend/ and docs/)
+node_modules/
+.next/
+*.tsbuildinfo
+frontend/.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local recovery copies, private uploads and temporary output
+.local-backups/
+.local-artifacts/
+uploads/
+*.log
+*.tmp
+*.bak
+playwright-report/
+test-results/
+
+# Office lock files
+~$*
+
+# never commit secrets; example files are fine
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+id_rsa
+id_ed25519
+.aws/
+.ssh/
+
+# Vercel CLI link / build output
+.vercel/

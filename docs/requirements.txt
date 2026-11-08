@@ -1,0 +1,3 @@
+# Optional figure and synthetic-image generation; not needed to run the API.
+matplotlib>=3.8,<4
+Pillow>=10,<14

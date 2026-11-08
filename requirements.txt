@@ -1,0 +1,2 @@
+# Runtime dependencies are maintained alongside the FastAPI backend.
+-r backend/requirements.txt
